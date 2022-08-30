@@ -1,0 +1,423 @@
+/*----------------- Commmon style is here ------------------ */
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+.container {
+    margin: 50px 140px;
+    width: 80%;
+}
+
+
+/*--------------- banner style is here ------------- */
+.banner-container {
+    background-color: #161616;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.banner-info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 111px 0 111px 106px;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.banner-info h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.banner-info a {
+    text-decoration: none;
+    color: white;
+    background-color: #DD0000;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-size: 20px;
+}
+
+#banner-icon {
+    margin-left: 10px;
+}
+
+/*----------- banner img style -------- */
+.banner:hover img {
+    transform: rotate(360deg) scale(.8);
+}
+
+.banner img {
+    transition: transform 2s ease-in 0.2s;
+}
+
+.banner-img img {
+    margin-top: 33px;
+    margin-left: 24px;
+    margin-right: 79px;
+    width: 90%;
+    height: 665px;
+}
+
+
+/* section style is start from here  */
+.match-and-player {
+    margin-top: 130px;
+}
+
+.side-navbar {
+    background-color: #161616;
+    width: 23%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.side-nav {
+    height: 252px;
+    display: grid;
+    grid-template-rows: 3;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.side-nav a {
+    text-decoration: none;
+    width: 150px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blog {
+    background-color: #DD0000;
+    color: #FFFFFF;
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+
+/* palayer card style  */
+.match-and-player {
+    display: flex;
+
+}
+
+.article-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player-card {
+    box-shadow: 1px 1px 5px 1px wheat;
+    border-radius: 7px;
+    height: 362;
+    width: 240px;
+    margin: 0 20px 20px 20px;
+}
+
+.player-card img {
+    width: 100%;
+}
+
+.player-card input {
+    display: block;
+    width: 100px;
+    height: 32px;
+    font-weight: 500px;
+    margin: 20px;
+}
+
+.transfer-info {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.icon-part {
+    display: flex;
+    column-gap: 30px;
+    margin-left: 20px;
+}
+
+.icon-part p {
+    display: flex;
+    align-items: flex-end;
+}
+
+.icon-part p span {
+    margin-left: 10px;
+}
+
+/* ----------------hidden button------------ */
+.hidden-button {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+}
+
+.hidden-button input {
+    background-color: #DD0000;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+/* -----------footer style is here ---------- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    height: 344px;
+    color: #FFFFFF
+}
+
+footer span {
+    font-weight: 600;
+    margin: 25px;
+}
+
+.goal {
+    display: flex;
+    justify-content: center;
+}
+
+footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+/*-------------- website two or match.htm style start ------------------- */
+.match-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.schedule-match {
+    margin-left: 20px;
+    box-shadow: 1px 1px 5px 1px wheat;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 260px;
+    height: 250px;
+}
+
+.schedule-match p {
+    margin-left: 60px;
+}
+
+.germany-france-flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    margin: 0px 20px;
+}
+
+.flag img {
+    width: 50px;
+}
+
+.schedule-info-name {
+    display: flex;
+    margin-left: 20px;
+}
+
+.schedule-info-name h1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+/*-------------- media query is start from here -----------
+ */
+
+
+/* media query for mobile phone  */
+
+@media only screen and (max-width:768px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-info {
+        width: 100%;
+        padding: 50px 0px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .match-and-player {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .side-navbar {
+        background-color: white;
+        width: 23%;
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .side-nav a {
+        box-shadow: 1px 1px 5px 1px gray;
+    }
+
+    .article-box {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .hidden-button {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #161616;
+        height: 344px;
+        color: #FFFFFF
+    }
+
+    footer hr {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    footer span {
+        font-weight: 600;
+        margin: 5px;
+        display: block;
+
+    }
+
+    .goal {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+/* media queary for tablet */
+
+@media only screen and (min-width:769px) and (max-width:992px) {
+    .match-and-player {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .side-navbar {
+        background-color: white;
+        width: 23%;
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .side-nav a {
+        box-shadow: 1px 1px 5px 1px gray;
+    }
+
+    .side-nav {
+        display: flex;
+        gap: 20px
+    }
+
+    .article-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hidden-button {
+        display: block;
+    }
+
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #161616;
+        height: 344px;
+        color: #FFFFFF
+    }
+
+    footer hr {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    footer span {
+        font-weight: 600;
+        margin: 5px;
+        display: block;
+
+    }
+
+    .goal {
+        display: flex;
+        justify-content: center;
+    }
+
+}
